@@ -20,7 +20,7 @@ jobs:
   job2:
     needs: job1
     runs-on: ubuntu-latest
-    environment: Dev
+    environment: test
 
     steps:
     - name: Run By
@@ -32,3 +32,4 @@ jobs:
         color: 'magenta'
     - name:
       run: echo "format('Hello {0} {1} {2}', 'Mona', 'the', 'Octocat'))"
+
